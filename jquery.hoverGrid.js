@@ -28,7 +28,7 @@
 			
 			if(!item.is('.hover-grid-item'))
 			{
-				$(hoverGrid).addClass('hover-grid-item');
+				$(item).addClass('hover-grid-item');
 			}
 			
 			//Set the width and height according to the zoom percentage
