@@ -6,6 +6,7 @@
  */
  
  .hover-grid .hover-grid-item {
+	background-color: #222;
 	width: 181px;
 	height: 181px;
 	margin: 0 18px 18px 0;
