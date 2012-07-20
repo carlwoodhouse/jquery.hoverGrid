@@ -5,7 +5,7 @@
  * Copyright 2012, Mark Searle, Carl Woodhouse.
  */
  
- .hover-grid.hover-grid-item {
+ .hover-grid .hover-grid-item {
 	width: 181px;
 	height: 181px;
 	margin: 0 18px 18px 0;
