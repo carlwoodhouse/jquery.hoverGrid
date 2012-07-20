@@ -20,7 +20,7 @@
 		
 		var hoverZoom = settings.zoom;
 		var hoverMove = settings.move;
-		var item = hoverGrid.find(settings.itemClass);
+		var item = hoverGrid.find(settings.itemClass).first();
 		var itemOriginalWidth = item.width();
 		var itemOriginalHeight = item.height();
 		var itemWidth = item.width() * hoverZoom;
