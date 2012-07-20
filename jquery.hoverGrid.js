@@ -25,6 +25,8 @@
 		var itemOriginalHeight = item.height();
 		var itemWidth = item.width() * hoverZoom;
 		var itemHeight = item.height() * hoverZoom;
+		
+		console.log(hoverMove);
 
 		$(hoverGrid).find(settings.itemClass).hover(function () {
 			$(this).find('img').stop(false, true).stop().animate({ 'width': itemWidth, 'height': itemHeight, 'top': hoverMove, 'left': hoverMove }, { duration: 200 });
