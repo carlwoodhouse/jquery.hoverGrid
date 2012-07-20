@@ -45,18 +45,6 @@ Full Example
 	
 *Default: '.item'*
 
-**zoom** - Define how much the animation zooms on hover
-
-	zoom: 1.2
-   
-*Default: 1*
- 
- **move** - efine how much the animation moves on hover
- 
-	move: -20
-
-*Default: -20*
-  
 ## Authors
 
 * [Carl Woodhouse](https://github.com/carlwoodhouse)
