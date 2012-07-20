@@ -23,7 +23,7 @@
 		var item = hoverGrid.find(settings.itemClass);
 		var itemOriginalWidth = item.width();
 		var itemOriginalHeight = item.height();
-		var doHoverZoom = (zoom != 0 && move != 0)
+		var doHoverZoom = (hoverZoom != 0 && hoverMove != 0)
 		var itemWidth = item.width() * hoverZoom;
 		var itemHeight = item.height() * hoverZoom;
 
