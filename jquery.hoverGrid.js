@@ -9,8 +9,8 @@
   $.fn.hoverGrid = function( options ) {  
 	var settings = $.extend( {
       'itemClass' : '.item',
-	  'zoom' : 0,
-	  'move' : 0
+	  'zoom' : 1,
+	  'move' : -20
     }, options);
   
     return this.each(function() {       
@@ -23,26 +23,17 @@
 		var item = hoverGrid.find(settings.itemClass);
 		var itemOriginalWidth = item.width();
 		var itemOriginalHeight = item.height();
-		var doHoverZoom = (hoverZoom != 0 && hoverMove != 0)
 		var itemWidth = item.width() * hoverZoom;
 		var itemHeight = item.height() * hoverZoom;
 
 		$(hoverGrid).find(settings.itemClass).hover(function () {
-			if(doHoverZoom)
-			{
-				$(this).find('img').stop(false, true).stop().animate({ 'width': itemWidth, 'height': itemHeight, 'top': hoverMove, 'left': hoverMove }, { duration: 200 });
-			}
+			$(this).find('img').stop(false, true).stop().animate({ 'width': itemWidth, 'height': itemHeight, 'top': hoverMove, 'left': hoverMove }, { duration: 200 });
 
-			//Display the caption
 			$(this).find('div.caption').stop(false, true).fadeIn(200);
 		},
         function () {
-            if(doHoverZoom)
-			{
-				$(this).find('img').stop(false, true).stop().animate({ 'width': itemOriginalWidth, 'height': itemOriginalHeight, 'top': '0', 'left': '0' }, { duration: 100 });
-			}
+			$(this).find('img').stop(false, true).stop().animate({ 'width': itemOriginalWidth, 'height': itemOriginalHeight, 'top': '0', 'left': '0' }, { duration: 100 });
 
-            //Hide the caption
             $(this).find('div.caption').stop(false, true).fadeOut(200);
         });
     });
