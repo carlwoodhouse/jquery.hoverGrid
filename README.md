@@ -49,13 +49,13 @@ Full Example
 
 	zoom: 1.2
    
-*Default: 0*
+*Default: 1*
  
  **move** - efine how much the animation moves on hover
  
 	move: -20
 
-*Default: 0*
+*Default: -20*
   
 ## Authors
 
