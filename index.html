@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery.hovergrid : A simple, lightweight jQuery plugin for creating a grid of images which when hovered reveals a caption" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.hovergrid</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/carlwoodhouse/jquery.hoverGrid">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.hovergrid</h1>
+          <h2 id="project_tagline">A simple, lightweight jQuery plugin for creating a grid of images which when hovered reveals a caption</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/carlwoodhouse/jquery.hoverGrid/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/carlwoodhouse/jquery.hoverGrid/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jquery.hoverGrid</h1>
+
+<p>A simple, lightweight jQuery plugin for creating a grid of images which when hovered reveals a caption</p>
+
+<h2>Installation</h2>
+
+<p>Include script <em>after</em> the jQuery library</p>
+
+<pre><code>&lt;script src="/path/jquery.hoverGrid.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>If you want the default styles also include the css, if not feel free to style it as you see wish!</p>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="/path/jquery.hoverGrid.css"&gt;
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>create the html markup for the grid in your file</p>
+
+<pre><code>&lt;div id="whatever"&gt;
+    &lt;div class="item"&gt;
+        &lt;img width="181" height="181" src="/image/source.jpg" alt="my image" title="my image" /&gt;
+        &lt;div class="caption" style="display: none;"&gt;
+            &lt;h2&gt;Some Title&lt;/h2&gt;
+            &lt;p&gt;This is a caption to end all captions&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;                 
+&lt;/div&gt;
+</code></pre>
+
+<p>apply the js, example:</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+      $('#whatever').hoverGrid();
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p>Full Example
+    Check out our <a href="http://carlwoodhouse.github.com/jquery.hoverGrid">github-page</a></p>
+
+<h2>Options</h2>
+
+<p><strong>itemClass</strong> - Define a class for the grid items</p>
+
+<pre><code>closeButton: '.alternate-class'
+</code></pre>
+
+<p><em>Default: '.item'</em></p>
+
+<p><strong>zoom</strong> - Define how much the animation zooms on hover</p>
+
+<pre><code>zoom: 2
+</code></pre>
+
+<p><em>Default: 1.2</em></p>
+
+<p><strong>move</strong> - efine how much the animation moves on hover</p>
+
+<pre><code>move: -20
+</code></pre>
+
+<p><em>Default: -20</em></p>
+
+<h2>Authors</h2>
+
+<ul>
+<li><a href="https://github.com/carlwoodhouse">Carl Woodhouse</a></li>
+<li><a href="https://github.com/marksearle">Mark Searle</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.hovergrid maintained by <a href="https://github.com/carlwoodhouse">carlwoodhouse</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
