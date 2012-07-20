@@ -15,21 +15,13 @@
   
     return this.each(function() {       
 		var hoverGrid = $(this);
-		
-		if(!hoverGrid.is('.hover-grid'))
-		{
-			hoverGrid.addClass('hover-grid');
-		}
-		
-		 $(hoverGrid).find(settings.itemClass).hover(function () {
+		hoverGrid.addClass('hover-grid');
+		hoverGrid.find(settings.itemClass).addClass('hover-grid-item');
+
+		$(hoverGrid).find(settings.itemClass).hover(function () {
 			var zoom = settings.zoom;
 			var move = settings.move;
-			var item = $(settings.itemClass);
-			
-			if(!item.is('.hover-grid-item'))
-			{
-				$(item).addClass('hover-grid-item');
-			}
+			var item = $(this);
 			
 			//Set the width and height according to the zoom percentage
 			var width = $(item).width() * zoom;
