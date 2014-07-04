@@ -41,7 +41,7 @@ Full Example
 ## Options
 **itemClass** - Define a class for the grid items
 
-    closeButton: '.alternate-class'
+    itemClass: '.alternate-class'
 	
 *Default: '.item'*
 
